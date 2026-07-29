@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>導讀　導讀與內容速覽</title>
+<style>
+@page {
+  size: A4;
+  margin: 20mm 18mm 18mm 18mm;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  font-family: "Noto Serif CJK TC", "Noto Sans CJK TC", "WenQuanYi Zen Hei", serif;
+  /* 正文放大到 14pt —— 原版約 10.5pt，這是「字太小」的主因 */
+  font-size: 14pt;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: #1b1b1b;
+  margin: 0;
+  /* 刻意不用 justify：本書中英夾雜，長英文詞無法斷行時
+     justify 會把中文字距拉得很開（「所 有 事 情 的 集 合」），反而更難讀 */
+  text-align: left;
+}
+
+p { margin: 0 0 0.95em 0; orphans: 3; widows: 3; }
+
+/* ---------- 標題 ---------- */
+h1, h2, h3, h4, h5 {
+  font-family: "Noto Sans CJK TC", "WenQuanYi Zen Hei", sans-serif;
+  line-height: 1.45;
+  break-after: avoid-page;
+  page-break-after: avoid;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 27pt;
+  color: #14496e;
+  margin: 0 0 6mm 0;
+  padding-bottom: 4mm;
+  border-bottom: 2.5pt solid #14496e;
+}
+h2 {
+  font-size: 19pt;
+  color: #14496e;
+  margin: 11mm 0 4mm 0;
+  padding-left: 4mm;
+  border-left: 5pt solid #2b7cb0;
+}
+h3 { font-size: 16pt; color: #21506e; margin: 8mm 0 3mm 0; }
+h4 { font-size: 14.5pt; color: #2c4a5e; margin: 6mm 0 2.5mm 0; }
+h5 { font-size: 14pt; color: #3b3b3b; margin: 5mm 0 2mm 0; }
+
+/* ---------- 章首目錄 ---------- */
+.chapter-toc {
+  background: #f4f7fa;
+  border: 0.8pt solid #c9d8e4;
+  border-radius: 3mm;
+  padding: 5mm 7mm;
+  margin: 0 0 9mm 0;
+  font-size: 12pt;
+  line-height: 1.75;
+  break-inside: avoid-page;
+  break-after: page;
+}
+.chapter-toc-title {
+  font-family: "Noto Sans CJK TC", "WenQuanYi Zen Hei", sans-serif;
+  font-weight: bold;
+  font-size: 13.5pt;
+  color: #14496e;
+  margin-bottom: 3mm;
+}
+.chapter-toc ol { margin: 0; padding-left: 6mm; }
+.chapter-toc ol ol { padding-left: 5mm; font-size: 11.5pt; color: #45596a; }
+.chapter-toc li { margin: 0.6mm 0; }
+
+/* ---------- 清單 ---------- */
+ul, ol { margin: 0 0 0.95em 0; padding-left: 7.5mm; }
+li { margin: 0.9mm 0; }
+li > p { margin-bottom: 0.4em; }
+
+/* ---------- 引用 ---------- */
+blockquote {
+  margin: 5mm 0;
+  padding: 3.5mm 6mm;
+  background: #f6f8f4;
+  border-left: 4.5pt solid #6d9e5e;
+  color: #2c3a26;
+  font-size: 13pt;
+  break-inside: avoid-page;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ---------- 表格 ---------- */
+.table-wrap { margin: 5mm 0; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* 表格比正文稍小，但仍維持 11.5pt 可讀下限 */
+  font-size: 11.5pt;
+  line-height: 1.65;
+}
+th, td {
+  border: 0.7pt solid #b8c6d1;
+  padding: 2.2mm 3mm;
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  background: #e7eef4;
+  font-family: "Noto Sans CJK TC", "WenQuanYi Zen Hei", sans-serif;
+  font-weight: bold;
+  color: #14496e;
+}
+tr { break-inside: avoid-page; page-break-inside: avoid; }
+thead { display: table-header-group; }
+tbody tr:nth-child(even) { background: #fafcfd; }
+
+/* ---------- 程式碼 ---------- */
+code {
+  font-family: "WenQuanYi Zen Hei Mono", "DejaVu Sans Mono", monospace;
+  font-size: 0.87em;
+  background: #f0f2f4;
+  padding: 0.3mm 1.2mm;
+  border-radius: 1mm;
+}
+pre {
+  background: #f7f8fa;
+  border: 0.7pt solid #d3dae0;
+  border-radius: 2mm;
+  padding: 3.5mm 4.5mm;
+  margin: 5mm 0;
+  font-size: 10.5pt;
+  line-height: 1.6;
+  /* 長行折行，避免右側被裁掉 */
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+pre code { background: none; padding: 0; font-size: 1em; }
+/* 短程式碼區塊不切頁；超過 25 行的允許跨頁，否則會擠出空白頁 */
+pre.keep-together { break-inside: avoid-page; page-break-inside: avoid; }
+
+/* ---------- 圖 ---------- */
+figure {
+  margin: 7mm 0;
+  text-align: center;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+figure img {
+  max-width: 100%;
+  /* 留住頁面高度，圖片不會獨佔整頁又切一半 */
+  max-height: 185mm;
+  height: auto;
+}
+figcaption {
+  font-family: "Noto Sans CJK TC", "WenQuanYi Zen Hei", sans-serif;
+  font-size: 11.5pt;
+  color: #4a5a67;
+  margin-top: 2.5mm;
+  line-height: 1.6;
+  text-align: center;
+}
+
+hr { border: none; border-top: 0.8pt solid #ccd6de; margin: 8mm 0; }
+
+a { color: #14496e; text-decoration: none; word-break: break-all; }
+
+/* Noto Sans CJK TC 有真正的 Bold 字面，靠字重就足以強調，
+   顏色只再壓深一點，不另外換色，避免整頁到處都是藍字 */
+strong {
+  font-family: "Noto Sans CJK TC", "WenQuanYi Zen Hei", sans-serif;
+  font-weight: 700;
+  color: #10283a;
+}
+
+/* ---------- 註腳 ---------- */
+.footnotes {
+  margin-top: 12mm;
+  padding-top: 5mm;
+  border-top: 1pt solid #ccd6de;
+  font-size: 11.5pt;
+  line-height: 1.7;
+  color: #3d4a55;
+  break-before: page;
+}
+.footnotes::before {
+  content: "註釋";
+  display: block;
+  font-family: "Noto Sans CJK TC", "WenQuanYi Zen Hei", sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+  color: #14496e;
+  margin-bottom: 4mm;
+}
+.footnotes hr { display: none; }
+.footnotes ol { padding-left: 8mm; }
+.footnotes li { margin: 2mm 0; break-inside: avoid-page; }
+.footnote-ref a {
+  font-size: 0.75em;
+  vertical-align: super;
+  color: #2b7cb0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footnote-backref { display: none; }
+
+/* ---------- 封面 ---------- */
+.cover { break-after: page; text-align: center; padding-top: 55mm; }
+.cover .book { font-size: 30pt; font-weight: bold; color: #14496e; line-height: 1.5; }
+.cover .part { font-size: 21pt; color: #2b7cb0; margin-top: 14mm; }
+.cover .meta { font-size: 12.5pt; color: #5b6b78; margin-top: 22mm; line-height: 2; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="book">深入理解 AI Agent：設計原理與工程實踐</div>
+  <div class="part">導讀　導讀與內容速覽</div>
+  <div class="meta">李博杰 著　·　繁體中文版<br>大字寬鬆排版　正文 14pt／行高 1.9</div>
+</div>
+<div class="chapter-toc"><div class="chapter-toc-title">本章目錄</div><ol><li>這份檔案是什麼<li>全書架構<li>檔案清單<li>想自己重新產生檔案<li>授權</li></ol></div><h2 id="這份檔案是什麼">這份檔案是什麼</h2>
+<p>這是《深入理解 AI Agent：設計原理與工程實踐》（李博杰 著）的<strong>繁體中文大字排版版</strong>。</p>
+<p>原書以簡體中文寫成，開源於 <a href="https://github.com/bojieli/ai-agent-book">github.com/bojieli/ai-agent-book</a>，採用 Apache-2.0 授權。本版本做了兩件事：</p>
+<ol>
+<li><strong>繁體中文</strong>：以上游社群繁體譯稿（譯者 <a href="https://github.com/tigercosmos">@tigercosmos</a>）為底本，再逐字檢查簡繁「一對多」漏轉字並修正用字（例如方位助詞「里」改為「裡」、「占用」改為「佔用」、「采用」改為「採用」）。</li>
+<li><strong>重新排版</strong>：原版 PDF 單頁字數偏高、字級約 10.5pt，長時間閱讀吃力。本版把正文放大到 <strong>14pt</strong>、行高 <strong>1.9</strong>，每行約 35 個中文字、每頁約 27 行；並確保標題不落單、表格列不跨頁、圖片不被切成兩半。每章獨立成一個 PDF，章首附本章目錄。</li>
+</ol>
+<h2 id="全書架構">全書架構</h2>
+<p>全書圍繞核心公式 <strong>Agent = LLM + 上下文 + 工具</strong> 展開，十章層層遞進：</p>
+<div class="table-wrap"><table><thead>
+<tr>
+<th style="text-align:center">章</th>
+<th>主題</th>
+<th>一句話核心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td><strong>Agent 基礎知識</strong></td>
+<td>Agent = LLM + 上下文 + 工具；Harness 工程才是競爭力</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td><strong>上下文工程</strong></td>
+<td>上下文決定能力上限：KV Cache、提示工程、Agent Skills、上下文壓縮</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td><strong>使用者記憶和知識庫</strong></td>
+<td>跨會話記住使用者、接入外部知識：使用者記憶、RAG、結構化索引、知識圖譜</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td><strong>工具</strong></td>
+<td>工具是 Agent 的雙手：MCP 協議、感知／執行／協作三類工具、事件驅動非同步 Agent、主動工具發現</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td><strong>Coding Agent 與程式碼生成</strong></td>
+<td>程式碼是「能創造新工具的工具」，生產級 Coding Agent 全景</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td><strong>Agent 的評估</strong></td>
+<td>把表現變成可比較訊號：評估環境、指標、統計顯著性、評估驅動選型</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td><strong>模型後訓練</strong></td>
+<td>預訓練／SFT／RL 三階段：何時選 SFT、何時選 RL，工具呼叫內化、樣本效率</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td><strong>Agent 的自我進化</strong></td>
+<td>不改權重也能成長：經驗學習、從工具使用者到創造者</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td><strong>多模態與即時互動</strong></td>
+<td>從文字擴充到語音、GUI、物理世界：語音三典範、Computer Use、機器人</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td><strong>多 Agent 協作</strong></td>
+<td>群體智慧高於個體：協作框架、上下文共享／隔離、湧現的「Agent 社會」</td>
+</tr>
+</tbody>
+</table></div><p>除十章正文外，另有<strong>引言</strong>、<strong>後記</strong>與<strong>習題參考答案</strong>。</p>
+<h2 id="檔案清單">檔案清單</h2>
+<div class="table-wrap"><table><thead>
+<tr>
+<th>檔案</th>
+<th>內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>00-導讀.pdf</code></td>
+<td>本頁</td>
+</tr>
+<tr>
+<td><code>01-引言.pdf</code></td>
+<td>引言</td>
+</tr>
+<tr>
+<td><code>02-第一章.pdf</code> ～ <code>11-第十章.pdf</code></td>
+<td>第一章至第十章正文</td>
+</tr>
+<tr>
+<td><code>12-後記.pdf</code></td>
+<td>後記</td>
+</tr>
+<tr>
+<td><code>13-習題參考答案.pdf</code></td>
+<td>各章習題參考答案</td>
+</tr>
+</tbody>
+</table></div><p><code>html/</code> 內有對應的 HTML 原稿，<code>src/</code> 內是校正後的 Markdown 原始檔，<code>images/</code> 為書中插圖。</p>
+<h2 id="想自己重新產生檔案">想自己重新產生檔案</h2>
+<p>排版參數都寫在 <code>tools/build.mjs</code> 開頭的 CSS 裡（字級、行高、邊界、分頁規則）。改完執行：</p>
+<pre class="keep-together"><code class="language-bash">npm install
+npm run build
+</code></pre>
+<p>若只想調字級，改 <code>body { font-size }</code> 一行即可；其餘尺寸多以此為基準等比呈現。</p>
+<h2 id="授權">授權</h2>
+<p>原書為 Apache-2.0 授權，本繁體排版版沿用相同授權，完整條文見 <code>LICENSE</code>。著作權屬原作者李博杰；繁體譯文由上游社群貢獻者完成。</p>
+
+</body>
+</html>

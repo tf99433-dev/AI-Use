@@ -1,0 +1,20 @@
+{
+  "name": "ai-agent-book-zhtw-readable",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "《深入理解 AI Agent》繁體中文大字寬鬆排版版",
+  "scripts": {
+    "fix": "node tools/fix-zhtw.mjs",
+    "build": "node tools/build.mjs",
+    "audit": "node tools/audit.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "playwright": "^1.62.0"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^6.2.108"
+  }
+}
