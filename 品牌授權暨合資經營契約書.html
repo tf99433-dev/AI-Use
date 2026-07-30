@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>旬魚堂 品牌授權暨合資經營契約書</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "WenQuanYi Zen Hei", "Noto Sans CJK TC", "PingFang TC", sans-serif;
+    color: #1a1a1a;
+    font-size: 10.5pt;
+    line-height: 1.75;
+    margin: 0;
+  }
+  .title {
+    text-align: center;
+    font-size: 19pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0 0 4px 0;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9.5pt;
+    color: #666;
+    margin-bottom: 14px;
+  }
+  .parties {
+    border: 1.5px solid #333;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 14px;
+    font-size: 10pt;
+  }
+  .parties p { margin: 3px 0; }
+
+  .summary {
+    background: #f3f6fa;
+    border-left: 4px solid #2b5e91;
+    padding: 10px 16px;
+    margin-bottom: 14px;
+    font-size: 10pt;
+  }
+  .summary-title { font-weight: bold; color: #2b5e91; margin: 0 0 4px 0; }
+  .summary table { width: 100%; border-collapse: collapse; }
+  .summary td { padding: 2px 6px 2px 0; vertical-align: top; }
+  .summary td.label {
+    white-space: nowrap; font-weight: bold; width: 8.5em; color: #2b5e91;
+  }
+
+  .draftnote {
+    background: #fdf3f3;
+    border-left: 4px solid #b3453e;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    font-size: 9.5pt;
+  }
+  .draftnote .warn-title { font-weight: bold; color: #b3453e; }
+
+  h2 {
+    font-size: 12pt;
+    border-bottom: 2px solid #2b5e91;
+    padding-bottom: 3px;
+    margin: 16px 0 7px 0;
+    color: #2b5e91;
+    page-break-after: avoid;
+  }
+  ol.clauses { margin: 0; padding-left: 0; list-style: none; }
+  ol.clauses > li {
+    margin: 6px 0;
+    padding-left: 4.6em;
+    text-indent: -4.6em;
+    page-break-inside: avoid;
+  }
+  .num {
+    display: inline-block;
+    width: 4.6em;
+    text-indent: 0;
+    font-weight: bold;
+    color: #2b5e91;
+    white-space: nowrap;
+  }
+  .cname { font-weight: bold; }
+  ul.subitems {
+    margin: 3px 0;
+    padding-left: 1.6em;
+    text-indent: 0;
+    list-style: none;
+  }
+  ul.subitems > li { padding-left: 0; text-indent: 0; margin: 3px 0; }
+  ul.subitems > li::before { content: "‧ "; color: #2b5e91; font-weight: bold; }
+  ol.roman { margin: 3px 0; padding-left: 2em; text-indent: 0; }
+  ol.roman > li { padding-left: 0; text-indent: 0; margin: 2px 0; }
+
+  .hl { font-weight: bold; }
+  .fill {
+    background: #fff2cc;
+    padding: 0 3px;
+    border-bottom: 1px solid #b8860b;
+    font-weight: bold;
+  }
+  .opt {
+    border: 1px dashed #b3453e;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: 6px 0 6px 0;
+    text-indent: 0;
+    background: #fefafa;
+  }
+  .opt-tag {
+    display: inline-block;
+    background: #b3453e;
+    color: #fff;
+    font-size: 8.5pt;
+    font-weight: bold;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+  .note {
+    display: block;
+    font-size: 9pt;
+    color: #7a6a3a;
+    background: #fdf9ec;
+    border-left: 3px solid #d4a017;
+    padding: 5px 10px;
+    margin: 5px 0 5px 0;
+    text-indent: 0;
+    line-height: 1.6;
+  }
+  .note b { color: #8a6d1f; }
+
+  table.grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    text-indent: 0;
+    font-size: 10pt;
+  }
+  table.grid th, table.grid td {
+    border: 1px solid #bbb;
+    padding: 4px 8px;
+    text-align: left;
+  }
+  table.grid th { background: #eef3f8; color: #2b5e91; }
+
+  .appendix {
+    margin-top: 18px;
+    border: 1.5px solid #d4a017;
+    border-radius: 6px;
+    padding: 10px 16px;
+    background: #fdfaf0;
+    page-break-inside: avoid;
+    font-size: 9.5pt;
+  }
+  .appendix h3 { margin: 0 0 6px 0; font-size: 11pt; color: #8a6d1f; }
+  .appendix ol { margin: 0; padding-left: 1.4em; }
+  .appendix li { margin: 3px 0; }
+
+  .sign { margin-top: 24px; page-break-inside: avoid; }
+  .sign table { width: 100%; border-collapse: collapse; }
+  .sign td {
+    width: 50%;
+    padding: 8px 20px 8px 0;
+    vertical-align: top;
+    font-size: 10pt;
+  }
+  .sign .line {
+    display: block;
+    border-bottom: 1px solid #333;
+    height: 2.2em;
+    margin-top: 4px;
+  }
+  .sign-date { margin-top: 16px; font-size: 10pt; }
+
+  @media screen and (max-width: 560px) {
+    body { padding: 16px; font-size: 15px; line-height: 1.85; }
+    ol.clauses > li { padding-left: 0; text-indent: 0; }
+    .num { display: block; width: auto; margin-bottom: 2px; }
+    .sign td { display: block; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<p class="title">旬魚堂　品牌授權暨合資經營契約書</p>
+<p class="subtitle">草稿　DRAFT ver.1　—　本協議一式兩份，雙方各執一份為憑</p>
+
+<div class="parties">
+  <p><span class="hl">甲方（品牌授權暨供貨方）</span>：＿＿＿＿＿＿＿＿＿＿（下稱「甲方」）</p>
+  <p><span class="hl">乙方（經營方）</span>：＿＿＿＿＿＿＿＿＿＿（下稱「乙方」）</p>
+  <p>緣甲方擁有「旬魚堂」品牌、產品技術及貨源，乙方具備門市營運與網路行銷能力。雙方就設於<span class="fill">＿＿＿＿＿＿</span>之攤位（下稱「本店」）合作經營事宜，同意訂立本契約，共同遵守下列條款。</p>
+</div>
+
+<div class="summary">
+  <p class="summary-title">▍重點速覽</p>
+  <table>
+    <tr><td class="label">合作範圍</td><td>僅限本店。乙方就「旬魚堂」品牌本身及甲方其他據點不享有權利、不負擔義務</td></tr>
+    <tr><td class="label">出資對價</td><td>甲方：品牌授權、產品技術、貨源供應　／　乙方：勞務（營運、管理、網路行銷）</td></tr>
+    <tr><td class="label">權益比例</td><td>甲方 50%、乙方 30%（乙方分階段既得）</td></tr>
+    <tr><td class="label">授權期間</td><td>5 年，期間內甲方不得單方撤回</td></tr>
+    <tr><td class="label">供貨加成</td><td>不逾進貨成本 15%，並依進貨量級距自動調降</td></tr>
+    <tr><td class="label">商圈排他</td><td>本店半徑 2 公里</td></tr>
+    <tr><td class="label">帳期</td><td>30 日，期間內不得單方縮短</td></tr>
+  </table>
+</div>
+
+<div class="draftnote">
+  <p><span class="warn-title">▍草稿使用說明：</span><span class="fill">黃底</span>處為待填數字或待確認事項，詳見文末<span class="hl">附錄一</span>；<span class="opt-tag">擇一</span>標記處為需依實際情形二擇一之條款。本草稿未經律師審閱，簽署前建議送請律師或會計師確認，特別是第 37 條之法律形式與責任範圍。</p>
+</div>
+
+<h2>第一章　合作架構</h2>
+<ol class="clauses">
+  <li><span class="num">第 1 條</span><span class="cname">（合作性質與範圍）</span>
+    <ol class="roman">
+      <li>本契約之合作範圍<span class="hl">僅限於本店</span>。乙方就「旬魚堂」品牌本身、甲方之其他據點及未來加盟體系，不享有任何權利，亦不負擔任何義務。</li>
+      <li>甲方以品牌授權、產品技術及貨源供應為其出資對價；乙方以勞務（門市營運、經營管理及網路行銷）為其出資對價。雙方均不另行以現金出資。</li>
+      <li>本契約為合資經營關係，非僱傭關係。乙方為本店之共同經營者。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 2 條</span><span class="cname">（名詞定義）</span>
+    <ul class="subitems">
+      <li><span class="hl">進貨成本</span>：甲方向<span class="hl">最終外部第三方供應商</span>實際支付之商品價款，以該供應商開立之統一發票、收據或進口報單為準。</li>
+      <li><span class="hl">供貨加成</span>：甲方就供貨予本店所收取之利潤，以進貨成本為計算基數。</li>
+      <li><span class="hl">淨利</span>：本店營業收入扣除進貨成本、供貨加成、租金、水電、人事、行銷支出、稅捐及其他經雙方認可之營運費用後之餘額。</li>
+      <li><span class="hl">關係人</span>：甲方之配偶、直系親屬、甲方擔任負責人、股東或實質控制之法人，及其他與甲方有控制從屬關係之個人或法人。</li>
+    </ul>
+  </li>
+
+  <li><span class="num">第 3 條</span><span class="cname">（權益比例）</span>
+    <ol class="roman">
+      <li>本店淨利之分配比例為：<span class="hl">甲方 50%、乙方 30%</span>。</li>
+      <li>其餘 20% 業經乙方與本店投資人另訂分潤安排，自本店淨利中優先扣除，<span class="hl">與甲方無涉</span>。甲方就該部分不負任何給付、保證或返還義務，亦不因本契約取得對該安排之決定權。</li>
+      <li>前二項所稱比例為<span class="hl">權益比例</span>，與第 8 條之供貨加成上限（15%）<span class="hl">分屬不同事項</span>，任一方不得混用、援引或以其一主張其他。</li>
+      <li>除本契約另有明文外，權益比例<span class="hl">不因任何一方之貢獻度、工作內容或職務調整而變動</span>。對特殊貢獻之額外報償，應以分紅或獎金方式為之，不得調整權益比例。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第二章　乙方權益之既得與模式調整</h2>
+<ol class="clauses">
+  <li><span class="num">第 4 條</span><span class="cname">（權益之分階段既得）</span>
+    <ol class="roman">
+      <li>乙方之 30% 權益，依下列期程分階段既得：
+        <table class="grid">
+          <tr><th>期程（自本店開業日起算）</th><th>當期既得</th><th>累計既得</th></tr>
+          <tr><td>屆滿 6 個月</td><td>10%</td><td>10%</td></tr>
+          <tr><td>屆滿 12 個月</td><td>10%</td><td>20%</td></tr>
+          <tr><td>屆滿 24 個月</td><td>10%</td><td>30%</td></tr>
+        </table>
+      </li>
+      <li>已既得之權益，<span class="hl">不因乙方職務、工作內容或合作模式之變動而喪失或減少</span>。</li>
+      <li>乙方於期程屆滿前無正當理由自行退出者，未既得部分歸零；已既得部分依第 31 條估價，由甲方承接。</li>
+      <li>因<span class="hl">可歸責於甲方之事由</span>致本契約終止，或甲方依第 26 條以外之事由終止本契約者，乙方之 30% 權益<span class="hl">視為全部既得</span>。</li>
+    </ol>
+    <span class="note"><b>說明：</b>此條同時保護雙方 —— 甲方不必擔心乙方短期退出仍持有 30%；乙方不必擔心投入兩年後被更換而一無所有。若雙方決定不採分階段既得，可整條刪除，惟第 5 條之保護即失其依附。</span>
+  </li>
+
+  <li><span class="num">第 5 條</span><span class="cname">（合作模式之調整）</span>
+    <ol class="roman">
+      <li>雙方得於合作期間協議調整分工方式（例如店務與網路業務分由不同方負責），惟<span class="hl">應經雙方書面同意</span>，任一方不得單方變更。</li>
+      <li>甲方認為乙方網路行銷成效不足而擬變更執行者，須同時符合下列要件：
+        <ul class="subitems">
+          <li>雙方事前已以書面約定明確之量化指標；</li>
+          <li>連續 <span class="fill">＿</span> 個月未達該指標；</li>
+          <li>甲方已以書面通知並給予 <span class="fill">＿</span> 個月改善期，改善期屆滿仍未達成。</li>
+        </ul>
+      </li>
+      <li>依前項變更執行者，乙方<span class="hl">已既得之權益不受影響</span>，其權益比例亦不因此調整。</li>
+      <li>乙方不再負責店務或網路業務時，就本店之財務、帳務及原始憑證<span class="hl">仍享有第 20 條之完整閱帳權</span>。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第三章　供貨、成本與加成</h2>
+<ol class="clauses">
+  <li><span class="num">第 6 條</span><span class="cname">（獨家進貨及其例外）</span>
+    <ol class="roman">
+      <li>契約期間內，乙方就「旬魚堂」品牌商品，<span class="hl">僅得向甲方叫貨</span>。</li>
+      <li>甲方連續 <span class="fill">＿</span> 日，或當月累計 <span class="fill">＿</span> 次未能足額供貨者，乙方<span class="hl">得自行外購同類商品</span>，不視為違反前項義務，甲方不得因此主張任何權利或據以終止本契約。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 7 條</span><span class="cname">（供貨成本之認定與查核）</span>
+    <ol class="roman">
+      <li>本店之進貨成本，以甲方向最終外部第三方供應商實際支付之價款為準，<span class="hl">不得經甲方之關係人或第三人轉手加價後充作進貨成本</span>。</li>
+      <li>甲方應於每次供貨時提供成本憑證影本。乙方得隨時要求核對正本，並<span class="hl">得每季至少一次查核甲方就本店商品之進貨紀錄</span>（下稱「進貨閱帳權」）。</li>
+      <li>運費、關稅、包材、倉儲等費用，以實際單據核實計入成本，<span class="hl">但不計入供貨加成之計算基數</span>。</li>
+      <li>甲方以同一批次配送多個據點者，運費按各據點<span class="hl">進貨金額比例分攤</span>。</li>
+      <li>甲方因規模採購而使進貨成本降低者，本店<span class="hl">同享該降低後之成本</span>，甲方不得另行對本店設定較高之內部價格。</li>
+      <li>甲方違反本條致乙方多支付價金者，應返還溢收金額，並按溢收金額 <span class="fill">＿</span> 倍給付違約金。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 8 條</span><span class="cname">（供貨加成與量價級距）</span>
+    <ol class="roman">
+      <li>契約期間內，甲方就本店之供貨加成<span class="hl">不得逾進貨成本之 15%</span>。</li>
+      <li>供貨加成依本店當月進貨金額，按下列級距<span class="hl">自動適用，無須另行協議</span>：
+        <table class="grid">
+          <tr><th>本店當月進貨金額</th><th>供貨加成</th></tr>
+          <tr><td>未達 <span class="fill">＿＿</span> 元</td><td>15%</td></tr>
+          <tr><td><span class="fill">＿＿</span> 元以上、未達 <span class="fill">＿＿</span> 元</td><td><span class="fill">＿</span>%</td></tr>
+          <tr><td><span class="fill">＿＿</span> 元以上</td><td><span class="fill">＿</span>%</td></tr>
+        </table>
+      </li>
+      <li>雙方得於本店開業滿 3 個月後檢討前項級距。<span class="hl">檢討未達成協議時，仍依原級距自動適用</span>，甲方不得以未達成協議為由提高加成。</li>
+      <li>甲方因外部成本變動而調整供貨價格者，應提前 <span class="fill">＿</span> 日書面通知並檢附成本變動憑證。乙方得於 <span class="fill">＿</span> 日內提出異議；異議期間仍依原價格供貨。</li>
+    </ol>
+    <span class="note"><b>說明：</b>此條取代「三個月後重新談判」之口頭共識。級距一經約定即自動適用，避免屆時因一方不同意而維持高加成。級距數字待雙方依預估營業規模填入。</span>
+  </li>
+
+  <li><span class="num">第 9 條</span><span class="cname">（費用封頂）</span>
+    契約期間內，甲方除供貨加成外，<span class="hl">不得向乙方或本店收取</span>品牌授權費、加盟金、月費、權利金、管理費、行銷基金、系統使用費、教育訓練費、開辦費<span class="hl">或其他任何名目之費用</span>。
+  </li>
+
+  <li><span class="num">第 10 條</span><span class="cname">（最惠待遇）</span>
+    <ol class="roman">
+      <li>甲方給予任何加盟店、直營店或其他合作據點之供貨加成、費用、帳期、商圈保障或其他條件，<span class="hl">若優於本契約，本店自動適用該較優條件</span>，無須另行協議。</li>
+      <li>甲方應於給予他店較優條件之日起 <span class="fill">＿</span> 日內<span class="hl">主動書面通知</span>乙方。</li>
+      <li>甲方未依前項通知者，乙方得溯及自該較優條件生效之日起請求差額，並得請求違約金 <span class="fill">＿＿</span> 元。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第四章　叫貨、貨款與商品風險</h2>
+<ol class="clauses">
+  <li><span class="num">第 11 條</span><span class="cname">（叫貨決定權）</span>
+    <ol class="roman">
+      <li>本店叫貨之品項與數量<span class="hl">由乙方決定</span>，甲方不得強制配貨，亦不得設定最低採購量或最低採購金額。</li>
+      <li>本店開業後 <span class="fill">＿</span> 個月內，乙方於叫貨前應徵詢甲方意見，惟最終決定權仍屬乙方。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 12 條</span><span class="cname">（帳期與貨款上限）</span>
+    <ol class="roman">
+      <li>貨款帳期為<span class="hl">自出貨日起 30 日</span>。契約期間內，甲方不得單方縮短帳期或變更為現金交易；如需調整，應提前 <span class="fill">＿</span> 個月書面通知，且調整後仍不得短於 30 日。</li>
+      <li>帳期為<span class="hl">持續循環適用</span>，不限於首批訂單。</li>
+      <li>本店未結貨款總額上限為 <span class="fill">＿＿</span> 元，且不得逾本店<span class="hl">近三個月平均月進貨金額</span>。</li>
+      <li>未結貨款逾前項上限時，乙方應於<span class="hl">通知後 7 日內</span>結清超額部分。</li>
+      <li>乙方逾期未結清者，甲方得暫停供貨，並就超額部分按年息 <span class="fill">＿</span>% 計息；<span class="hl">惟不得逕行終止本契約</span>，仍應依第 26 條之程序辦理。</li>
+    </ol>
+    <span class="note"><b>說明：</b>上限數字宜以本店實際現金部位為準。上限訂得過高將使乙方之曝險超過本店可動用資金；建議先算出開辦後之預備金餘額再填。</span>
+  </li>
+
+  <li><span class="num">第 13 條</span><span class="cname">（商品風險與損耗分擔）</span>
+    <div class="opt">
+      <span class="opt-tag">擇一 A</span><span class="hl">冷凍／常溫可保存商品適用</span>
+      <ol class="roman">
+        <li>乙方就未售出且未逾保存期限之商品，得於進貨後 <span class="fill">＿</span> 日內，以進貨價<span class="hl">退回或調換</span>其他品項。</li>
+        <li>每月退換金額以當月進貨金額之 <span class="fill">＿</span>% 為上限。</li>
+        <li>退換之運費由 <span class="fill">＿＿</span> 負擔。</li>
+      </ol>
+    </div>
+    <div class="opt">
+      <span class="opt-tag">擇一 B</span><span class="hl">生鮮商品適用</span>
+      <ol class="roman">
+        <li>生鮮商品不適用退貨。甲方應配合乙方之銷售節奏，採<span class="hl">小額高頻</span>方式供貨，單次供貨量不逾本店 <span class="fill">＿</span> 日之預估銷量。</li>
+        <li>本店當月損耗率逾 <span class="fill">＿</span>% 之部分，由甲乙雙方按 <span class="fill">＿</span> : <span class="fill">＿</span> 分擔。</li>
+        <li>乙方<span class="hl">依甲方建議數量</span>進貨而產生之滯銷損耗，由甲方負擔 <span class="fill">＿</span>%。</li>
+      </ol>
+    </div>
+    <span class="note"><b>待確認：</b>本店商品為生鮮或冷凍，將決定適用 A 案或 B 案。若兩類商品併存，可分別約定適用範圍。</span>
+  </li>
+
+  <li><span class="num">第 14 條</span><span class="cname">（商品責任）</span>
+    商品之瑕疵、變質、標示不實或食品安全事故，除可歸責於乙方之保存或處理不當者外，<span class="hl">由甲方負責</span>，並負擔因此所生之損害賠償、行政罰鍰及回收費用。
+  </li>
+</ol>
+
+<h2>第五章　品牌授權與商圈保障</h2>
+<ol class="clauses">
+  <li><span class="num">第 15 條</span><span class="cname">（品牌授權）</span>
+    <ol class="roman">
+      <li>甲方授權乙方於本店使用「旬魚堂」品牌、商標、產品配方及營運技術，期間<span class="hl">自本店開業日起 5 年</span>。</li>
+      <li>授權期間內，甲方<span class="hl">不得單方撤回、中止或限制</span>前項授權；但依第 26 條終止本契約者，不在此限。</li>
+      <li>「旬魚堂」品牌及商標之所有權仍屬甲方。乙方不得以自己名義申請註冊、轉讓或授權第三人使用。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 16 條</span><span class="cname">（商圈排他）</span>
+    <ol class="roman">
+      <li>授權期間內，甲方不得於本店<span class="hl">半徑 2 公里範圍內</span>自營、合資或授權第三人設立「旬魚堂」品牌據點或經營同類商品之據點。</li>
+      <li>前項限制及於甲方之關係人。</li>
+      <li>甲方違反本條者，應給付乙方違約金 <span class="fill">＿＿</span> 元；乙方並得終止本契約、請求第 27 條之補償，且不影響其他損害賠償之請求。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 17 條</span><span class="cname">（供貨保證）</span>
+    <ol class="roman">
+      <li>甲方應維持穩定供貨，並確保商品品質符合品牌標準。</li>
+      <li>因可歸責於甲方之事由致未按時或未足額供貨者，除第 6 條第 2 項之外購權外，乙方得請求按<span class="hl">每次 <span class="fill">＿＿</span> 元</span>計算之違約金。</li>
+      <li>甲方連續 <span class="fill">＿</span> 日以上未能供貨，或 <span class="fill">＿</span> 個月內累計 <span class="fill">＿</span> 次未能供貨者，乙方得終止本契約，並適用第 27 條之補償。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第六章　經營、決策與財務</h2>
+<ol class="clauses">
+  <li><span class="num">第 18 條</span><span class="cname">（經營分工）</span>
+    <ol class="roman">
+      <li><span class="hl">乙方負責</span>：門市營運、人員招募與排班、庫存管理、日常帳務、本店網路行銷。</li>
+      <li><span class="hl">甲方負責</span>：品牌維護、產品技術與教育訓練、貨源穩定、供貨品質。</li>
+      <li>乙方之駐店義務：自本店開業起 <span class="fill">＿</span> 個月，每週 <span class="fill">＿</span> 日、每日 <span class="fill">＿</span> 小時為上限。期滿後改為每週到店 <span class="fill">＿</span> 次督導，現場人力由本店支薪聘僱，其成本列為本店營運費用。</li>
+      <li>乙方駐店期間之津貼為每月 <span class="fill">＿＿</span> 元，列為本店營運費用，與第 3 條之權益分配<span class="hl">不相互抵充</span>。</li>
+      <li>網路行銷之廣告預算<span class="hl">由本店支出</span>，非乙方個人負擔；每月預算上限為 <span class="fill">＿＿</span> 元，逾此金額應經雙方同意。</li>
+    </ol>
+    <span class="note"><b>待確認：</b>駐店月數建議與本店預備金可支撐之月數相當，使雙方風險同步。津貼金額宜低於市場行情，反映乙方兼具股東身分。</span>
+  </li>
+
+  <li><span class="num">第 19 條</span><span class="cname">（決策權限）</span>
+    <ol class="roman">
+      <li>下列事項<span class="hl">由乙方全權決定</span>：商品售價、促銷折扣、叫貨數量、人員招募與排班、單筆 <span class="fill">＿＿</span> 元以下之營運支出。</li>
+      <li>下列事項<span class="hl">應經雙方書面同意</span>：對外借貸、結束營業、盤讓本店、變更品牌、增設據點、單筆逾 <span class="fill">＿＿</span> 元之支出、本契約之變更。</li>
+      <li>產品配方、商標識別及品牌標準之訂定與變更，屬甲方權限，乙方應配合遵守。甲方變更前應提前 <span class="fill">＿</span> 日通知，並負擔因變更所生之本店必要成本。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 20 條</span><span class="cname">（帳務與閱帳權）</span>
+    <ol class="roman">
+      <li>本店應設<span class="hl">獨立帳戶與帳簿</span>，收支不得與甲方其他據點混同。</li>
+      <li>乙方應於每月 <span class="fill">＿</span> 日前提出本店損益表，載明營業收入、進貨、租金、雜支及淨利。</li>
+      <li><span class="hl">雙方對本店之帳簿及原始憑證均有隨時查閱之權利</span>；乙方對甲方之進貨紀錄另有第 7 條之進貨閱帳權。</li>
+      <li>本店投資人依其分潤安排所享有之閱帳權，不因本契約而受影響。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 21 條</span><span class="cname">（淨利分配）</span>
+    <ol class="roman">
+      <li>本店淨利依第 3 條所定比例分配，每月結算一次，於次月 <span class="fill">＿</span> 日前分配完畢。</li>
+      <li>每月淨利應先提撥 <span class="fill">＿</span>% 為預備金，至累計 <span class="fill">＿＿</span> 元為止。</li>
+      <li>前期累積虧損未彌補前，<span class="hl">不予分配</span>。</li>
+      <li>雙方就本店之營運虧損，<span class="hl">均無個人補款義務</span>。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第七章　智慧財產與行銷資產</h2>
+<ol class="clauses">
+  <li><span class="num">第 22 條</span><span class="cname">（行銷資產之歸屬）</span>
+    <ol class="roman">
+      <li>乙方為本店建立及經營之社群帳號、官方網站、廣告帳戶、會員與顧客名單、圖文影音素材（下稱「行銷資產」），其<span class="hl">管理權於契約期間內屬乙方</span>。</li>
+      <li>本店之社群帳號應以「<span class="hl">旬魚堂＋據點名稱</span>」之形式設立，與甲方之品牌總帳號分立。</li>
+      <li>本契約終止時，行銷資產（含會員與顧客名單之副本）<span class="hl">無償歸乙方所有</span>；乙方應於 <span class="fill">＿</span> 日內移除帳號上之品牌識別。</li>
+      <li>乙方所製作之圖文影音素材、營運手冊及行銷方法，其<span class="hl">著作權屬乙方</span>。甲方如欲提供予其他據點或加盟店使用，應<span class="hl">另行取得乙方書面授權並支付授權費</span>；乙方得拒絕。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 23 條</span><span class="cname">（終止後之營業與競業）</span>
+    <ol class="roman">
+      <li>本契約終止後，乙方<span class="hl">得於原點位以自有品牌繼續營業</span>，甲方不得干預，亦不得據以主張競業禁止或請求任何補償。</li>
+      <li>乙方之競業限制<span class="hl">僅存在於契約存續期間</span>，契約終止後自動解除。</li>
+      <li>乙方於契約存續期間，不得使用「旬魚堂」以外之品牌經營同類商品；但第 6 條第 2 項之外購情形不在此限。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第八章　契約期間、終止與補償</h2>
+<ol class="clauses">
+  <li><span class="num">第 24 條</span><span class="cname">（契約期間）</span>
+    本契約自<span class="fill">＿＿</span>年<span class="fill">＿＿</span>月<span class="fill">＿＿</span>日起生效，期間 5 年。期滿前 <span class="fill">＿</span> 個月，任一方未以書面表示不續約者，自動續約 <span class="fill">＿</span> 年，續約條件不得劣於本契約。
+  </li>
+
+  <li><span class="num">第 25 條</span><span class="cname">（試營運與檢視）</span>
+    <ol class="roman">
+      <li>本店開業後 <span class="fill">＿</span> 個月為試營運期。</li>
+      <li>試營運期屆滿時，雙方應共同檢視營運狀況。<span class="hl">任一方認為不宜繼續者，得終止本契約</span>，雙方互不請求補償，並依第 28 條清算。</li>
+      <li>試營運期內終止者，乙方之權益既得期程停止計算，已既得部分依第 31 條處理。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 26 條</span><span class="cname">（甲方終止之限制）</span>
+    <ol class="roman">
+      <li>授權期間內，甲方<span class="hl">僅於</span>乙方有下列情事之一，且經<span class="hl">書面通知並給予 <span class="fill">＿</span> 個月改善期</span>而未改善時，始得終止本契約：
+        <ul class="subitems">
+          <li>違反第 6 條，未依約向甲方叫貨；</li>
+          <li>擅自變更產品配方、商標識別或品牌標準；</li>
+          <li>因可歸責於乙方之事由發生重大食品安全事故；</li>
+          <li>積欠貨款逾 <span class="fill">＿</span> 日，經催告仍未清償；</li>
+          <li>其他重大違反本契約且情節重大者。</li>
+        </ul>
+      </li>
+      <li>甲方<span class="hl">不得以「經營不善」「業績未達預期」「有損品牌形象」等概括事由</span>終止本契約。</li>
+      <li>甲方未依本條程序而終止本契約者，適用第 27 條之補償。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 27 條</span><span class="cname">（甲方提前終止之補償）</span>
+    <ol class="roman">
+      <li>甲方於授權期間內非依第 26 條終止本契約，或因第 16 條、第 17 條之情事致乙方終止本契約者，甲方應給付乙方：
+        <ul class="subitems">
+          <li><span class="hl">提前終止補償金</span>：每月 <span class="fill">＿＿</span> 元 × 剩餘授權月數，總額以 <span class="fill">＿＿</span> 元為上限；</li>
+          <li>依第 31 條估價<span class="hl">買回乙方之權益</span>（此時乙方 30% 權益依第 4 條第 4 項視為全部既得）。</li>
+        </ul>
+      </li>
+      <li>前項給付<span class="hl">不影響</span>乙方依第 22 條、第 23 條所享有之行銷資產歸屬及原點位續營權利。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 28 條</span><span class="cname">（乙方終止與結束營業）</span>
+    <ol class="roman">
+      <li>乙方得於 <span class="fill">＿</span> 個月前書面通知終止本契約。此時乙方未既得之權益歸零，已既得部分依第 31 條估價由甲方承接。</li>
+      <li>經雙方書面同意，或本店預備金用罄且雙方均無意繼續挹注時，本店結束營業。</li>
+      <li>結束營業之清算順序為：<span class="hl">(一)</span> 清償本店全部負債（含未結貨款）；<span class="hl">(二)</span> 依本店投資人之分潤安排辦理其給付；<span class="hl">(三)</span> 餘額由甲乙雙方按 50 : 30 之比例（即 62.5% : 37.5%）分配。</li>
+      <li><span class="hl">因經營不善而結束營業者，任一方均不得向他方請求賠償或補償</span>，亦無任何補款義務。</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>第九章　品牌轉讓與權益移轉</h2>
+<ol class="clauses">
+  <li><span class="num">第 29 條</span><span class="cname">（品牌轉讓之限制與優先承購）</span>
+    <ol class="roman">
+      <li>授權期間內，甲方<span class="hl">不得</span>將「旬魚堂」品牌、商標或本契約之權利義務讓與第三人。</li>
+      <li>甲方確有讓與之必要者，應<span class="hl">先以書面通知乙方</span>，載明受讓人、價金及全部交易條件。乙方得於通知到達後 <span class="fill">＿</span> 日內，以<span class="hl">同等條件</span>優先承購。</li>
+      <li>乙方不行使優先承購權者，甲方應使受讓人以書面<span class="hl">概括承受本契約之全部義務</span>，並於讓與前將該書面交付乙方。未依此辦理者，讓與對乙方不生效力。</li>
+      <li>甲方違反本條者，應給付乙方違約金 <span class="hl">新台幣 20 萬元</span>或<span class="hl">轉讓價金之 <span class="fill">＿</span>%，擇高</span>；乙方並得終止本契約、請求第 27 條之補償，且不影響其他損害賠償之請求。</li>
+      <li>甲方擬結束「旬魚堂」品牌之經營者，<span class="hl">準用</span>前四項規定。乙方享有<span class="hl">優先承接品牌並繼續經營</span>之權利。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 30 條</span><span class="cname">（乙方權益之轉讓）</span>
+    乙方之權益，非經甲方書面同意，不得轉讓第三人。乙方擬退出時，甲方有優先承購權，價格依第 31 條估定。
+  </li>
+
+  <li><span class="num">第 31 條</span><span class="cname">（權益估價）</span>
+    本契約所稱權益估價，除雙方另有合意外，以下列較高者為準：
+    <ul class="subitems">
+      <li>本店<span class="hl">近 12 個月淨利 × <span class="fill">＿</span> 倍 × 該方既得權益比例</span>；</li>
+      <li>本店<span class="hl">原始總資本 <span class="fill">＿＿</span> 元 × 該方既得權益比例</span>。</li>
+    </ul>
+    估價作成後 <span class="fill">＿</span> 日內一次付清；分期給付應經他方書面同意。
+  </li>
+</ol>
+
+<h2>第十章　其他約定</h2>
+<ol class="clauses">
+  <li><span class="num">第 32 條</span><span class="cname">（未來加盟體系之權益）</span>
+    <ol class="roman">
+      <li>甲方日後開放加盟者，本店<span class="hl">不因此負擔任何加盟金、月費或其他費用</span>（第 9 條）。</li>
+      <li>甲方使用乙方所製作之行銷素材、營運手冊或本店營運數據，用於招募或輔導加盟店者，應<span class="hl">另行取得乙方書面授權並約定報酬</span>。</li>
+      <li>加盟體系之收益結構及乙方就此之權益（如有），由雙方另行協議，未協議前不影響本契約之效力。</li>
+    </ol>
+  </li>
+
+  <li><span class="num">第 33 條</span><span class="cname">（保密）</span>
+    雙方就對方之進貨成本、供應商資料、配方、客戶名單及本契約內容負保密義務，非經他方書面同意不得洩漏。本義務於契約終止後 <span class="fill">＿</span> 年內仍繼續有效。
+  </li>
+
+  <li><span class="num">第 34 條</span><span class="cname">（通知）</span>
+    本契約所定之通知，應以書面（含電子郵件或雙方指定之通訊軟體）為之，送達至簽署頁所載之地址或帳號即生效力。地址或帳號變更時應即通知他方。
+  </li>
+
+  <li><span class="num">第 35 條</span><span class="cname">（契約之變更）</span>
+    本契約之變更、補充或解除，<span class="hl">非經雙方書面簽署，不生效力</span>。任何口頭承諾、會議記錄或通訊軟體對話，均不構成本契約之一部。
+  </li>
+
+  <li><span class="num">第 36 條</span><span class="cname">（爭議處理）</span>
+    本契約以中華民國法律為準據法。因本契約所生之爭議，雙方同意先行協商；協商不成者，合意以<span class="fill">＿＿＿＿</span>地方法院為第一審管轄法院。
+  </li>
+
+  <li><span class="num">第 37 條</span><span class="cname">（法律形式與責任）</span>
+    <div class="opt">
+      <span class="opt-tag">擇一 A</span><span class="hl">以合夥／個人名義經營</span>　雙方就本店對外之債務，依民法合夥之規定負連帶責任；內部分擔比例依第 3 條之權益比例定之。
+    </div>
+    <div class="opt">
+      <span class="opt-tag">擇一 B</span><span class="hl">另設商號或公司經營</span>　雙方應於本契約簽署後 <span class="fill">＿</span> 日內完成商號登記／公司設立，本契約所定之權益比例即為出資或股權比例，雙方責任以出資額為限。
+    </div>
+    <span class="note"><b>待確認：</b>A 案對外為<b>連帶無限責任</b>，本店債務債權人得直接向個人求償；B 案責任以出資為限但有登記與稅務成本。此條攸關個人財產風險，簽署前建議諮詢律師或會計師。</span>
+  </li>
+
+  <li><span class="num">第 38 條</span><span class="cname">（契約份數）</span>
+    本契約一式二份，雙方各執一份為憑，自雙方簽署之日起生效。
+  </li>
+</ol>
+
+<div class="appendix">
+  <h3>附錄一　待填數字與待確認事項</h3>
+  <ol>
+    <li><b>當事人</b>：甲方為個人或公司？如為公司，是否須由實際負責人擔任連帶保證人？（簽署頁）</li>
+    <li><b>第 5 條</b>：網路行銷之量化指標、未達標月數、改善期月數</li>
+    <li><b>第 6 條</b>：斷貨幾日／當月幾次得外購</li>
+    <li><b>第 7 條</b>：違反成本認定之違約金倍數</li>
+    <li><b>第 8 條</b>：量價級距之金額與對應加成率、調價通知與異議期間</li>
+    <li><b>第 10 條</b>：最惠待遇之通知期限與違約金</li>
+    <li><b>第 11 條</b>：初期須徵詢甲方意見之月數</li>
+    <li><b>第 12 條</b>：未結貨款上限（建議先算出預備金餘額）、逾期利率、帳期調整之通知期間</li>
+    <li><b>第 13 條</b>：<b>商品為生鮮或冷凍 → 決定適用 A 案或 B 案</b>；退換期限、比例、損耗分擔比例</li>
+    <li><b>第 16、17 條</b>：違反排他及斷貨之違約金金額</li>
+    <li><b>第 18 條</b>：駐店月數、每週日數、每日時數、月津貼、廣告預算上限</li>
+    <li><b>第 19 條</b>：乙方得單獨決定之支出上限金額</li>
+    <li><b>第 20、21 條</b>：損益表提出日、分配日、預備金提撥比例與上限</li>
+    <li><b>第 24、25 條</b>：生效日、續約通知期間、試營運月數</li>
+    <li><b>第 26 條</b>：改善期月數、積欠貨款容忍日數</li>
+    <li><b>第 27 條</b>：提前終止補償金之月額與總額上限</li>
+    <li><b>第 29 條</b>：優先承購決定期間、轉讓價金違約金百分比</li>
+    <li><b>第 31 條</b>：淨利倍數、原始總資本金額、付款期限</li>
+    <li><b>第 37 條</b>：<b>採合夥（A 案）或另設商號公司（B 案）</b></li>
+  </ol>
+</div>
+
+<div class="sign">
+  <table>
+    <tr>
+      <td>
+        <span class="hl">甲方（品牌授權暨供貨方）簽章：</span>
+        <span class="line"></span>
+        姓名／公司名稱：＿＿＿＿＿＿＿＿＿＿<br>
+        身分證字號／統一編號：＿＿＿＿＿＿＿＿<br>
+        地址：＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>
+        聯絡電話：＿＿＿＿＿＿＿＿＿＿＿＿
+      </td>
+      <td>
+        <span class="hl">乙方（經營方）簽章：</span>
+        <span class="line"></span>
+        姓名：＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>
+        身分證字號：＿＿＿＿＿＿＿＿＿＿＿＿<br>
+        地址：＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>
+        聯絡電話：＿＿＿＿＿＿＿＿＿＿＿＿
+      </td>
+    </tr>
+  </table>
+  <p class="sign-date">中華民國＿＿＿＿年＿＿＿＿月＿＿＿＿日</p>
+</div>
+
+</body>
+</html>
